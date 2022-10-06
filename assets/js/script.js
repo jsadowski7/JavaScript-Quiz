@@ -1,11 +1,36 @@
 // Global Variables
 var viewHighScoreEl = document.getElementById("view-highscores");
+var btnStart = document.getElementById("start-game");
+
+
 var questionOneEl = document.getElementById("first-question");
 var questionTwoEl = document.getElementById("second-question");
 var questionThreeEl = document.getElementById("third-question");
 var questionFourEl = document.getElementById("fourth-question");
 var questionFiveEl = document.getElementById("fifth-question");
 
+var timer;
+var timerCount;
+var timeEl = document.querySelector(".timer-count");
+
+
+// Function to start Quiz
+function startQuiz() {
+    timerCount = 30;
+    btnStart.disabled = true;
+    startTimer()
+}
+
+// Function for Timer
+function startTimer() {
+  timer = setInterval(function() {
+    timerCount--;
+    timeEl.textContent = timerCount;
+    if (timerCount >= 0) {
+        clearInterval(timer);
+    }
+  }, 1000);
+}
 
 // Array of questions for the quiz
 var questions = [
@@ -60,4 +85,6 @@ var questions = [
         correctAnswer: 'D'
     }
 ];
+
+
 console.log(questions);
