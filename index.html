@@ -10,34 +10,54 @@
 <body>
     <header>
         <h1 id="view-highscores">View Highscores</h1>
-        <h1 class="timer">Time: <span id="timer"></span></h1>
-    </header>
-    <!-- Container for start menu -->
-<div id="container-start" class="show">
-     <div>
-         <h1>JavaScript Coding Quiz</h1>
-        <button id="start-game">Start Quiz</button>
-     </div>
-</div>
-    <!-- Container for questions -->
-<div id="container-questions" class="hide">
-    <div class="container questions">
-        <div id="question"></div>
-        <div id="answers"></div>
-    </div>
-</div>
-
-<div id="container-end" class="hide">
-    <div class="container end">
-        <div id="final-score">
-            <h1>All Done!</h1>
+        <div class="timer">
+            <div class="timer-text">
+            <div class="timer-count">30</div><p>seconds remaining</p>
+            </div>
         </div>
+
+    </header>
+    <div class="start-menu">
+        <h2>JavaScript Coding Quiz</h2>
+        <button id="start-game">Start Quiz</button>
     </div>
-</div>
-<div id="enter-initials">
-    <p>Enter Initials: </p>
-</div>
+    <div hidden class="first-question">
+          <h3>Question 1</h3>
+          <button class="answers" id="Q1-Correct">A</button>
+          <button class="answers" id="Q1-Incorrect">B</button>
+          <button class="answers" id="Q1-Incorrect">C</button>
+          <button class="answers" id="Q1-Incorrect">D</button>
+    </div>
+    <div hidden id="second-question">
+        <h3>Question 2</h3>
+          <button class="answers" id="Q2-Incorrect">A</button>
+          <button class="answers" id="Q2-Correct">B</button>
+          <button class="answers" id="Q2-Incorrect">C</button>
+          <button class="answers" id="Q2-Incorrect">D</button>
+    </div>
+    <div hidden id="third-question">
+        <h3>Question 3</h3>
+          <button class="answers" id="Q3-Incorrect">A</button>
+          <button class="answers" id="Q3-Incorrect">B</button>
+          <button class="answers" id="Q3-Correct">C</button>
+          <button class="answers" id="Q3-Incorrect">D</button>
+    </div>
+    <div hidden id="fourth-question">
+        <h3>Question 4</h3>
+          <button class="answers" id="Q4-Incorrect">A</button>
+          <button class="answers" id="Q4-Incorrect">B</button>
+          <button class="answers" id="Q4-Incorrect">C</button>
+          <button class="answers" id="Q4-Correct">D</button>
+    </div>
+    <div  hidden id="fifth-question">
+        <h3>Question 5</h3>
+          <button class="answers" id="Q5-Incorrect">A</button>
+          <button class="answers" id="Q5-Incorrect">B</button>
+          <button class="answers" id="Q5-Incorrect">C</button>
+          <button class="answers" id="Q5-Correct">D</button>
+    </div>
+    <div id="finished"></div>
  
-<script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
