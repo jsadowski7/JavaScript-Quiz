@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+/* Header */
+header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    margin: 0;
+    padding:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#view-highscores:hover {
+    cursor: pointer;
+    color: darkmagenta;
+}
+
+h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    display: inline;
+}

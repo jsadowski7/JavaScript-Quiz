@@ -9,9 +9,34 @@
 </head>
 <body>
     <header>
-        <h1>JavaScript Quiz</h1>
-        <h2>View Highscores</h2>
+        <h1 id="view-highscores">View Highscores</h1>
+        <h1 class="timer">Time: <span id="timer"></span></h1>
     </header>
+    <!-- Container for start menu -->
+<div id="container-start" class="show">
+     <div>
+         <h1>JavaScript Coding Quiz</h1>
+        <button id="start-game">Start Quiz</button>
+     </div>
+</div>
+    <!-- Container for questions -->
+<div id="container-questions" class="hide">
+    <div class="container questions">
+        <div id="question"></div>
+        <div id="answers"></div>
+    </div>
+</div>
+
+<div id="container-end" class="hide">
+    <div class="container end">
+        <div id="final-score">
+            <h1>All Done!</h1>
+        </div>
+    </div>
+</div>
+<div id="enter-initials">
+    <p>Enter Initials: </p>
+</div>
  
 <script src="./assets/js/script.js"></script>
 </body>
