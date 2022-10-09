@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <header>
-        <h1 id="view-highscores">View Highscores</h1>
-        <div class="timer">
-            <div class="timer-text">
-            <div class="timer-count">30</div><p>seconds remaining</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Code Quiz | FUN </title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body> 
+
+        <header>
+            <h4 id="view-high-scores">View High Scores</h4> 
+            <h4 class="timer">Time: <span id="timer"></span></h4>
+        </header>
+
+        <div id="starter-container" class="show">
+            <div class="container start">
+                <h1>JavaScript Coding Quiz</h1>  
+                <button class="btn startend" id="start-game">Start Quiz</button>
+            </div>    
+        </div>
+
+        <div id="question-container" class="hide">
+            <div class="container questions">
+                <div id="question"></div>
+                <div id="answer-buttons" class="btn-grid"></div>
             </div>
         </div>
 
-    </header>
-    <div class="start-menu">
-        <h2>JavaScript Coding Quiz</h2>
-        <button id="start-game">Start Quiz</button>
+        <div id="end-container" class="hide">
+           <div class="container end">
+            <div id=score-banner>
+                <h1>All done!</h1>
+            </div>  
+            <form id="initials-form" class="initials">
+              <p> Enter Initials:
+                <input type="text" name="initials" id="initials" class="text-input" />
+                <button class="btn startend" id="sumbit-score" type="submit">Submit</button> </p>
+              </form>
+            </div>
+        </div>
+
+        <div id="high-score-container" class="hide">
+          <div class="high-scores container">
+            <h1 class="high-score">High Scores</h1>
+            <ol id="high-score-list" class="score-list"></ol>
+        <div>
+            <button class="btn" id="go-back">Go back</button>
+            <button class="btn" id="clear-high-scores">Clear high scores</button>
+        </div>
+        </div>
     </div>
-    <div hidden class="first-question">
-          <h3>Question 1</h3>
-          <button class="answers" id="Q1-Correct">A</button>
-          <button class="answers" id="Q1-Incorrect">B</button>
-          <button class="answers" id="Q1-Incorrect">C</button>
-          <button class="answers" id="Q1-Incorrect">D</button>
+
+    <div class="hide" id="correct">
+        <h2>Correct</h2>
     </div>
-    <div hidden id="second-question">
-        <h3>Question 2</h3>
-          <button class="answers" id="Q2-Incorrect">A</button>
-          <button class="answers" id="Q2-Correct">B</button>
-          <button class="answers" id="Q2-Incorrect">C</button>
-          <button class="answers" id="Q2-Incorrect">D</button>
+    <div class="hide" id="wrong">
+        <h2>Wrong </h2>
     </div>
-    <div hidden id="third-question">
-        <h3>Question 3</h3>
-          <button class="answers" id="Q3-Incorrect">A</button>
-          <button class="answers" id="Q3-Incorrect">B</button>
-          <button class="answers" id="Q3-Correct">C</button>
-          <button class="answers" id="Q3-Incorrect">D</button>
-    </div>
-    <div hidden id="fourth-question">
-        <h3>Question 4</h3>
-          <button class="answers" id="Q4-Incorrect">A</button>
-          <button class="answers" id="Q4-Incorrect">B</button>
-          <button class="answers" id="Q4-Incorrect">C</button>
-          <button class="answers" id="Q4-Correct">D</button>
-    </div>
-    <div  hidden id="fifth-question">
-        <h3>Question 5</h3>
-          <button class="answers" id="Q5-Incorrect">A</button>
-          <button class="answers" id="Q5-Incorrect">B</button>
-          <button class="answers" id="Q5-Incorrect">C</button>
-          <button class="answers" id="Q5-Correct">D</button>
-    </div>
-    <div id="finished"></div>
- 
-    <script src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/script.js"></script> 
 </body>
 </html>
