@@ -31,23 +31,23 @@ var QuestionIndex = 0
 
 // The array of questions for our quiz game.
 var questions = [
-  { q: 'Arrays in Javascript can be used to store __________.', 
-    a: '4. all of the above', 
-    choices: [{choice: '1. numbers'}, {choice: '2. booleans'}, {choice: '3. strings'}, {choice: '4. all of the above'}]
+  { q: 'Which syntax is used for creating an array?', 
+    a: '4. []', 
+    choices: [{choice: '1. ()'}, {choice: '2. {}'}, {choice: '3. <>'}, {choice: '4. []'}]
   },
   { q: 'Inside which HTML element do we put the javascript?', 
     a: '3. <script>', 
     choices: [{choice: '1. <h1>'}, {choice: '2. <js>'}, {choice: '3. <script>'}, {choice: '4. <head>'}]
   },
-  { q: 'In the code -- setinterval(time(),1000) -- what is time()?', 
-    a: '1. callback function', 
-    choices: [{choice: '1. callback function'}, {choice: '2. undefined'}, {choice: '3. variable'}, {choice: '4. all of the above'}]
+  { q: 'What will console.log() return?', 
+    a: '1. A message in the Console', 
+    choices: [{choice: '1. A message in the Console'}, {choice: '2. Nothing'}, {choice: '3. A message on the webpage'}, {choice: '4. An array'}]
   },
   { q: 'What syntax would call a function?', 
     a: '4. function()', 
     choices: [{choice: '1. var function'}, {choice: '2. function'}, {choice: '3. call function'}, {choice: '4. function()'}]
   },
-  { q: 'When did javascript first appear?', 
+  { q: '', 
     a: '1. 1995', 
     choices: [{choice: '1. 1995'}, {choice: '2. Roaring twenties'}, {choice: '3. 2005'}, {choice: '4. 2000'}]
   },
@@ -168,7 +168,7 @@ var answerCheck = function(event) {
       else {
         answerWrong()
         score = score - 1;
-        timeleft = timeleft - 3;
+        timeLeft = timeLeft - 3;
     };
 
   //go to next question, check if there is more questions
