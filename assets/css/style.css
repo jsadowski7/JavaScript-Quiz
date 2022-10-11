@@ -7,11 +7,11 @@
     --secondary: darkblue;
     --tertiary: darkred;
     --white: rgb(255, 255, 255);
-    font-size: 62.5%;
+    font-size: 65%;
   }
 
   body {
-    background: #ededed;
+    background: white;
     color: var(--secondary);
     margin: 0;
     padding: 0;
@@ -129,7 +129,7 @@ h1 {
   .btn:hover {
       background: var(--tertiary);
       border-radius: 10px;
-      box-shadow: 0 2px grey;
+      box-shadow: 0 1px grey;
       cursor: pointer;
   }
 
