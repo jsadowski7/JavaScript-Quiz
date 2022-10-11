@@ -47,17 +47,9 @@ var questions = [
     a: '4. function()', 
     choices: [{choice: '1. var function'}, {choice: '2. function'}, {choice: '3. call function'}, {choice: '4. function()'}]
   },
-  { q: '', 
-    a: '1. 1995', 
-    choices: [{choice: '1. 1995'}, {choice: '2. Roaring twenties'}, {choice: '3. 2005'}, {choice: '4. 2000'}]
-  },
-  { q: 'What does DOM stand for?', 
-    a: '2. Document Object Model', 
-    choices: [{choice: '1. Do Overnight Modules'}, {choice: '2. Document Object Model'}, {choice: '3. Divas Obviously Model'}, {choice: '4. Do Oo Mo'}]
-  },
-  { q: 'What is getItem commonly used for?', 
-    a: '2. local storage', 
-    choices: [{choice: '1. adding drama'}, {choice: '2. local storage'}, {choice: '3. online shopping'}, {choice: '4. naming a variable'}]
+  { q: 'What does "this" represent?', 
+    a: '1. Global Object', 
+    choices: [{choice: '1. Global Object'}, {choice: '2. Local Storage'}, {choice: '3. Console'}, {choice: '4. Local Object'}]
   },
 ];
 

@@ -29,7 +29,7 @@ header {
 
 #view-high-scores:hover {
     cursor: pointer;
-    color: black;
+    color: darkred;
 }
 
 header h4 {
